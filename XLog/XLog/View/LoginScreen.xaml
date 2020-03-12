@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XLog.View.LoginScreen">
+    <StackLayout>
+        <Label x:Name="Username_Label" Text="Username"></Label>
+        <Entry x:Name="Username_Entry" Placeholder="Username"></Entry>
+        <Label x:Name="Password_Label" Text="Password"></Label>
+        <Entry x:Name="Password_Entry" Placeholder="Password"></Entry>
+        <Button x:Name="Sign_Button" Text="Sign in" Clicked="SignInHandler"></Button>
+    </StackLayout>
+</ContentPage>
