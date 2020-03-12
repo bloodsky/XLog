@@ -9,8 +9,9 @@ namespace XLog
     {
         public App()
         {
+            // Controller loading up every xaml 
             InitializeComponent();
-
+            // Loading up our main screen controller
             MainPage = new LoginScreen();
         }
 

@@ -31,7 +31,7 @@ namespace XLog.View
             else
             {
                 // DisplayAlert(Titolo,Messaggio,Testo button)
-                DisplayAlert("LoginScreen", "Login Failed!", "ok");
+                DisplayAlert("LoginScreen", "Login Failed!!!", "ok");
             }
         }
     }
