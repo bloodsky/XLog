@@ -20,9 +20,10 @@ namespace XLog.Models
             this.Password = Password;
         }
 
-        // Function the right composition of credentials inserted by user
+        // Function to get the right composition of credentials inserted by user
         public bool InfoCheck()
         {
+
             if (!this.Username.Equals("") && !this.Password.Equals(""))
                 return true;
             else

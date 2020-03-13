@@ -5,11 +5,33 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="XLog.View.LoginScreen">
-    <StackLayout>
-        <Label x:Name="Username_Label" Text="Username"></Label>
-        <Entry x:Name="Username_Entry" Placeholder="Username"></Entry>
-        <Label x:Name="Password_Label" Text="Password"></Label>
-        <Entry x:Name="Password_Entry" Placeholder="Password"></Entry>
-        <Button x:Name="Sign_Button" Text="Sign in" Clicked="SignInHandler"></Button>
+
+
+    <StackLayout x:Name="MasterLayout">
+
+        <StackLayout x:Name="LogoLayout" VerticalOptions="FillAndExpand">
+            <Image x:Name="LoginImg" Source="logocini.png" Margin="0,80,0,0" />
+        </StackLayout>
+
+
+        <StackLayout x:Name="LoginLayout" VerticalOptions="StartAndExpand">
+
+
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                    <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
+                </OnIdiom>
+            </StackLayout.Padding>
+
+            <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="true"/>
+
+            <Label x:Name="Username_Label" Text="Username"></Label>
+            <Entry x:Name="Username_Entry" Placeholder="Username"></Entry>
+            <Label x:Name="Password_Label" Text="Password"></Label>
+            <Entry x:Name="Password_Entry" Placeholder="Password"></Entry>
+            <Button x:Name="Sign_Button" Text="Sign in" Clicked="SignInHandler"></Button>
+        </StackLayout>
+
     </StackLayout>
 </ContentPage>
